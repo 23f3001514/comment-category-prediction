@@ -89,7 +89,7 @@ Early iterations optimized for accuracy and a 5-model blend scored *worse* on th
 
 ```bash
 # Clone the repository
-git clone https://github.com/<your-username>/comment-category-prediction.git
+git clone https://github.com/23f3001514/comment-category-prediction.git
 cd comment-category-prediction
 
 # Install dependencies
