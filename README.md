@@ -2,7 +2,7 @@
 
 Predicting the category a platform assigns to a user comment, using text, engagement, and system-flag features
 
-![Python](https://img.shields.io/badge/Python-3.12-blue) ![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-orange) ![LightGBM](https://img.shields.io/badge/LightGBM-boosting-green) ![Pandas](https://img.shields.io/badge/Pandas-data-informational) ![License: MIT](https://img.shields.io/badge/License-MIT-lightgrey)
+![Python](https://img.shields.io/badge/Python-3.12-blue) ![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-orange) ![LightGBM](https://img.shields.io/badge/LightGBM-boosting-green) ![Pandas](https://img.shields.io/badge/Pandas-data-informational)
 
 **Best Model: Coordinate-Ascent Ensemble (5 models) | Validation Macro-F1: 0.7981 | Leaderboard Score: 0.79640**
 
@@ -15,10 +15,20 @@ The pipeline combines TF-IDF text vectorization with engineered engagement/text-
 ## 🗂️ Repository Structure
 
 ```
-comment-category-prediction/
-├── comment_category_solution_v6_professional.ipynb   # Main notebook: EDA, features, models, ensemble
-├── Comment_Category_Prediction_Project_Report.pdf     # Full project report
-├── submission.csv                                      # Example output format
+heavy-equipment-price-prediction/
+├── Models/
+│   └── model_building.ipynb                                 # model training (RF, Naive bayes, LightGBM, Logistic, SGD)
+├── Notebook/
+│   ├── EDA_and_data_inspection.ipynb                        # Exploratory data analysis
+│   ├── feature_engineering.ipynb                            # Feature engineering & preprocessing pipeline
+│   └── complete_notebook_code.ipynb                
+|   └── scaling_and_training.ipynb                
+├── Scripts/
+│   └── model_comaprison_and_evaluation.ipynb                  # Validation metrics & model comparison
+├── report/
+│   └── Heavy_Equipment_Price_Prediction_Report.pdf  # Full written project report
+├── .gitignore
+├── LICENSE
 └── README.md
 ```
 
@@ -108,6 +118,3 @@ Python · NumPy · Pandas · Matplotlib · Seaborn · scikit-learn · LightGBM
 - Threshold/decision-boundary tuning per class, given the metric weights all four classes equally
 - Broader hyperparameter search (grid/Bayesian) for LightGBM and Random Forest
 
-## 📄 License
-
-This project is available under the MIT License.
